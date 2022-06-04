@@ -1,0 +1,7 @@
+# cmake_minimum_required(VERSION 3.23.2)
+
+# project(test)
+
+# add_library(adder STATIC adder.cpp)
+
+add_library(adder SHARED adder.cpp)
