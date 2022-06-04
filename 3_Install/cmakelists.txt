@@ -19,5 +19,9 @@ add_subdirectory(Adder)
 target_include_directories(${PROJECT_NAME} PUBLIC Adder)
 target_link_libraries(${PROJECT_NAME} adder) # adder just is adder library in add_library(adder adder.cpp)
 
-set(CMAKE_INSTALL_PREFIX /Users/apple/My_disk/Learning/Technical_Practice/Cmake/3_Install/release)
+set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR}/release)
+
+message(${PROJECT_SOURCE_DIR})
+message(${PROJECT_BINARY_DIR})
+
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
