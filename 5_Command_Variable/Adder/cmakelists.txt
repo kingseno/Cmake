@@ -1,0 +1,17 @@
+# cmake_minimum_required(VERSION 3.23.2)
+
+# project(test)
+
+# set(VERSION_MAJOR 0)
+# set(VERSION_MINOR 1)
+# set(VERSION_PATCH 4)
+# set(LIB_VERSION ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH})
+# set_target_properties(adder PROPERTIES 
+#                             VERSION ${LIB_VERSION})
+
+# add_library(adder STATIC adder.cpp)
+
+add_library(adder SHARED adder.cpp)
+message("CMAKE_CURRENT_LIST_DIR: " ${CMAKE_CURRENT_LIST_DIR})
+message("CMAKE_SOURCE_DIR: " ${CMAKE_SOURCE_DIR})
+message("PROJECT_SOURCE_DIR: " ${PROJECT_SOURCE_DIR})
