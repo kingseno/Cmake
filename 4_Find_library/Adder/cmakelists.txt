@@ -1,0 +1,17 @@
+# cmake_minimum_required(VERSION 3.23.2)
+
+# project(test)
+
+# set(VERSION_MAJOR 0)
+# set(VERSION_MINOR 1)
+# set(VERSION_PATCH 4)
+# set(LIB_VERSION ${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_PATCH})
+# set_target_properties(adder PROPERTIES 
+#                             VERSION ${LIB_VERSION})
+
+# add_library(adder STATIC adder.cpp)
+
+add_library(adder SHARED adder.cpp)
+
+install(TARGETS adder DESTINATION lib)
+install(FILES adder.h DESTINATION include)
